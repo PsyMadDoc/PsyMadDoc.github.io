@@ -3,6 +3,13 @@
 	position: fixed;
 }
 
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0
+}
+
 .dropdown-item.cv:hover {
 	background-color: rgba(64, 13, 129, 0.2);
 }
