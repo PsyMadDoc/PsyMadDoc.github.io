@@ -3,14 +3,13 @@
 	position: fixed;
 }
 
-#cv:hover {
+.dropdown-item.cv:hover {
 	background-color: rgba(64, 13, 129, 0.2);
 }
 
-#search-btn:hover {
+.btn.btn.btn-outline-secondary.my-2.my-sm-0.search-btn:hover {
 	background-color: rgb(104, 0, 99);
 }
-
 
 /*-----Jumbotron-----*/
 
@@ -18,7 +17,7 @@
 	margin-bottom: auto;
 }
 
-div#bg-img {
+div.jumbotron.jumbotron-fluid {
   background: url(background.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -30,16 +29,16 @@ float: left;
 
 }
 
-#title, #subtitle {
+.title, .subtitle {
 	font-family: 'Roboto', sans-serif;
 	color: white;
 }
 
-#title {
+.title {
 	font-size: 4em;
 }
 
-#subtitle {
+.subtitle {
 	border-bottom: 2px solid white;
 	border-left: 2px solid white;
 	display: flex;
@@ -53,19 +52,23 @@ div.icons {
 	margin-top: 20px;
 }
 
-#icon {
+.icon,
+.icon:hover,
+.icon:focus {
+	color: white;
+	text-decoration: none;
+}
+
+.icon > i {
 	font-size: 1.5em;
 	color: white;
 	padding: 10px;
 	margin: 0 auto;
-	/*border: 2px solid white;*/
 	border-top: 2px solid white;
-	/*display: inline-block;*/
 }
 
-#icon:hover {
+.icon > i:hover {
 	border-color: rgba(0, 0, 0, 0);
-	/*border-bottom: 6px double white;*/
 	border-bottom: 2px solid white;
 	transition: all 0.4s ease 0s;
 }
@@ -76,7 +79,7 @@ div.dev-wrapper {
 	margin: 2vh 0;
 }
 
-#devicons {
+.devicons {
 	font-size: 5em;
 	color: black;
 	display: flex;
@@ -89,73 +92,70 @@ div.dev-wrapper {
 	padding-right: 18px;
 }
 
-.fab.fa-r-project {
+.fa-r-project {
 	color: #3B5998;
 }
 
-
 /*-----Profession Cards-----*/
 
-#cards {
+.cards {
 	padding-top: 15px;
 }
 
 @media (min-width: 576px) {
-	div#psy-card.col.px-sm-0.px-xs-0 {
-		padding-right: 16px!important;
-		padding-left: 8px!important;
-	}
-}
-
-@media (min-width: 576px) {
-	div#dev-card.col.px-sm-0.px-xs-0 {
+	div.col.px-sm-0.px-xs-0.dev {
 		padding-right: 8px!important;
 		padding-left: 16px!important;
 	}
 }
 
-#dev-card div.card-header, #dev-card div.card-footer {
-	background-color: #680063;
-}
-
-#dev-link, #psy-link {
+.nav-link.active.dev, .nav-link.active.psy {
 	padding: 0;
 }
 
-#dev-card-body {
+.card-header.dev, .card-footer.dev {
+	background-color: #680063;
+}
+
+.card-body.dev {
 	background-color: #7F0279;
 }
 
-#dev-card-body:hover {
+.card-body.dev:hover {
 	background-color: #680063;
 	transition: 0.3s;
 }
 
-#dev-card-body, #psy-card-body {
+.card-body.dev, .card-body.psy {
 	margin: 0;
 	height: 30vh;
 	display: table;
 }
 
-#dev-card-body h3, #psy-card-body h3 {
+.card-body.dev h3, .card-body.psy h3 {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
 }
 
-#psy-card div.card-header, #psy-card div.card-footer {
+@media (min-width: 576px) {
+	div.col.px-sm-0.px-xs-0.psy {
+		padding-right: 16px!important;
+		padding-left: 8px!important;
+	}
+}
+.card-header.psy, .card-footer.psy {
 	background-color: #33076A;
 }
 
-#psy-card-body {
+.card-body.psy {
 	background-color: #5518A2;
 }
 
-#psy-card-body:hover {
+.card-body.psy:hover {
 	background-color: #33076A;
 	transition: 0.3s;
 }
-
 
 /*-----Footer-----*/
 
