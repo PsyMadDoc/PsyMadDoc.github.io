@@ -1,0 +1,170 @@
+/*-----Navigation Bar-----*/
+.nav {
+	position: fixed;
+}
+
+#cv:hover {
+	background-color: rgba(64, 13, 129, 0.2);
+}
+
+#search-btn:hover {
+	background-color: rgb(104, 0, 99);
+}
+
+
+/*-----Jumbotron-----*/
+
+.jumbotron {
+	margin-bottom: auto;
+}
+
+div#bg-img {
+  background: url(background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 78vh;
+}
+
+.container {
+float: left;
+
+}
+
+#title, #subtitle {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+#title {
+	font-size: 4em;
+}
+
+#subtitle {
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	display: flex;
+	flex-basis: 460px;
+	max-width: 460px;
+	text-align: center;
+	padding-left: 10px;
+}
+
+div.icons {
+	margin-top: 20px;
+}
+
+#icon {
+	font-size: 1.5em;
+	color: white;
+	padding: 10px;
+	margin: 0 auto;
+	/*border: 2px solid white;*/
+	border-top: 2px solid white;
+	/*display: inline-block;*/
+}
+
+#icon:hover {
+	border-color: rgba(0, 0, 0, 0);
+	/*border-bottom: 6px double white;*/
+	border-bottom: 2px solid white;
+	transition: all 0.4s ease 0s;
+}
+
+/*-----Skills Bar-----*/
+
+div.dev-wrapper {
+	margin: 2vh 0;
+}
+
+#devicons {
+	font-size: 5em;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	flex: 1 1 auto;
+	align-content: center;
+	height: 15vh;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.fab.fa-r-project {
+	color: #3B5998;
+}
+
+
+/*-----Profession Cards-----*/
+
+#cards {
+	padding-top: 15px;
+}
+
+@media (min-width: 576px) {
+	div#psy-card.col.px-sm-0.px-xs-0 {
+		padding-right: 16px!important;
+		padding-left: 8px!important;
+	}
+}
+
+@media (min-width: 576px) {
+	div#dev-card.col.px-sm-0.px-xs-0 {
+		padding-right: 8px!important;
+		padding-left: 16px!important;
+	}
+}
+
+#dev-card div.card-header, #dev-card div.card-footer {
+	background-color: #680063;
+}
+
+#dev-link, #psy-link {
+	padding: 0;
+}
+
+#dev-card-body {
+	background-color: #7F0279;
+}
+
+#dev-card-body:hover {
+	background-color: #680063;
+	transition: 0.3s;
+}
+
+#dev-card-body, #psy-card-body {
+	margin: 0;
+	height: 30vh;
+	display: table;
+}
+
+#dev-card-body h3, #psy-card-body h3 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#psy-card div.card-header, #psy-card div.card-footer {
+	background-color: #33076A;
+}
+
+#psy-card-body {
+	background-color: #5518A2;
+}
+
+#psy-card-body:hover {
+	background-color: #33076A;
+	transition: 0.3s;
+}
+
+
+/*-----Footer-----*/
+
+footer {
+	margin-top: 5vh;
+	border-top: 1px solid;
+	border-top-color: rgba(104, 0, 99. 0.4);
+	min-height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
