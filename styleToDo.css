@@ -1,0 +1,68 @@
+/*-----Navigation Bar-----*/
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #dfe6e9;
+}
+
+/*-----App Core-----*/
+.container-app {
+  padding: 50px;
+}
+
+.container-app h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 4em;
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: #680063;
+  margin: 5vh 0; 
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+li::selection {
+  background: transparent;
+}
+
+#noitems {
+  color: #95a5a6;
+  font-style: italic;
+  padding-top: 2em;
+}
+
+/*Mark as done*/
+.done {
+  text-decoration: #400D81 double line-through;
+}
+
+/* Style the close button */
+.close {
+  position: relative;
+  float: right;
+  margin-left: 20px;
+}
+
+.close:hover {
+  background-color: #dfe6e9;
+}
+
+::selection {
+  background: transparent; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: transparent; /* Gecko Browsers */
+}
