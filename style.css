@@ -1,27 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*-----Navigation Bar-----*/
 .nav {
-	position: fixed;
+  position: fixed;
 }
 
 .fixed-top {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .dropdown-item.cv:hover {
-	background-color: rgba(64, 13, 129, 0.2);
+  background-color: rgba(64, 13, 129, 0.2);
 }
 
 .btn.btn.btn-outline-secondary.my-2.my-sm-0.search-btn:hover {
-	background-color: rgb(104, 0, 99);
+  background-color: rgb(104, 0, 99);
 }
 
 /*-----Jumbotron-----*/
 
 .jumbotron {
-	margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 div.jumbotron.jumbotron-fluid {
@@ -32,146 +38,152 @@ div.jumbotron.jumbotron-fluid {
 }
 
 .container {
-float: left;
-
+  float: left;
 }
 
-.title, .subtitle {
-	font-family: 'Roboto', sans-serif;
-	color: white;
+.title,
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .title {
-	font-size: 4em;
+  font-size: 10vmin;
 }
 
 .subtitle {
-	border-bottom: 2px solid white;
-	border-left: 2px solid white;
-	display: flex;
-	flex-basis: 460px;
-	max-width: 460px;
-	text-align: center;
-	padding-left: 10px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  display: flex;
+  flex-basis: 460px;
+  max-width: 460px;
+  text-align: center;
+  padding-left: 10px;
+  font-size: 2.5vmin;
 }
 
 div.icons {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .icon,
 .icon:hover,
 .icon:focus {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .icon > i {
-	font-size: 1.5em;
-	color: white;
-	padding: 10px;
-	margin: 0 auto;
-	border-top: 2px solid white;
+  font-size: 1.5em;
+  color: white;
+  padding: 10px;
+  margin: 0 auto;
+  border-top: 2px solid white;
 }
 
 .icon > i:hover {
-	border-color: rgba(0, 0, 0, 0);
-	border-bottom: 2px solid white;
-	transition: all 0.4s ease 0s;
+  border-color: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid white;
+  transition: all 0.4s ease 0s;
 }
 
 /*-----Skills Bar-----*/
 
 div.dev-wrapper {
-	margin: 2vh 0;
+  margin: 2vh 0;
 }
 
 .devicons {
-	font-size: 5em;
-	color: black;
-	display: flex;
-	justify-content: space-between;
-	flex-flow: row wrap;
-	flex: 1 1 auto;
-	align-content: center;
-	height: 15vh;
-	padding-left: 18px;
-	padding-right: 18px;
+  font-size: 5em;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  align-content: center;
+  height: 15vh;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .fa-r-project {
-	color: #3B5998;
+  color: #3b5998;
 }
 
 /*-----Profession Cards-----*/
 
 .cards {
-	padding-top: 15px;
+  padding-top: 15px;
 }
 
 @media (min-width: 576px) {
-	div.col.px-sm-0.px-xs-0.dev {
-		padding-right: 8px!important;
-		padding-left: 16px!important;
-	}
+  div.col.px-sm-0.px-xs-0.dev {
+    padding-right: 8px !important;
+    padding-left: 16px !important;
+  }
 }
 
-.nav-link.active.dev, .nav-link.active.psy {
-	padding: 0;
+.nav-link.active.dev,
+.nav-link.active.psy {
+  padding: 0;
 }
 
-.card-header.dev, .card-footer.dev {
-	background-color: #680063;
+.card-header.dev,
+.card-footer.dev {
+  background-color: #680063;
 }
 
 .card-body.dev {
-	background-color: #7F0279;
+  background-color: #7f0279;
 }
 
 .card-body.dev:hover {
-	background-color: #680063;
-	transition: 0.3s;
+  background-color: #680063;
+  transition: 0.3s;
 }
 
-.card-body.dev, .card-body.psy {
-	margin: 0;
-	height: 30vh;
-	display: table;
+.card-body.dev,
+.card-body.psy {
+  margin: 0;
+  height: 30vh;
+  display: table;
 }
 
-.card-body.dev h3, .card-body.psy h3 {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+.card-body.dev h3,
+.card-body.psy h3 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
-	div.col.px-sm-0.px-xs-0.psy {
-		padding-right: 16px!important;
-		padding-left: 8px!important;
-	}
+  div.col.px-sm-0.px-xs-0.psy {
+    padding-right: 16px !important;
+    padding-left: 8px !important;
+  }
 }
-.card-header.psy, .card-footer.psy {
-	background-color: #33076A;
+.card-header.psy,
+.card-footer.psy {
+  background-color: #33076a;
 }
 
 .card-body.psy {
-	background-color: #5518A2;
+  background-color: #5518a2;
 }
 
 .card-body.psy:hover {
-	background-color: #33076A;
-	transition: 0.3s;
+  background-color: #33076a;
+  transition: 0.3s;
 }
 
 /*-----Footer-----*/
 
 footer {
-	margin-top: 5vh;
-	border-top: 1px solid;
-	border-top-color: rgba(104, 0, 99. 0.4);
-	min-height: 10vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  margin-top: 5vh;
+  border-top: 1px solid;
+  border-top-color: rgba(104, 0, 99 0.4);
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
