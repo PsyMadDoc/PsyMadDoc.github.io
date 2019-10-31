@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-/*-----Navigation Bar-----*/
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .nav {
   position: fixed;
 }
@@ -28,13 +32,14 @@
 
 .jumbotron {
   margin-bottom: auto;
+  padding: 3rem 0;
 }
 
 div.jumbotron.jumbotron-fluid {
   background: url(background.jpg);
   background-attachment: fixed;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 75vh;
 }
 
 .container {
@@ -48,7 +53,8 @@ div.jumbotron.jumbotron-fluid {
 }
 
 .title {
-  font-size: 10vmin;
+  display: inline-block;
+  font-size: calc(16px + 5vw);
 }
 
 .subtitle {
@@ -59,7 +65,20 @@ div.jumbotron.jumbotron-fluid {
   max-width: 460px;
   text-align: center;
   padding-left: 10px;
-  font-size: 2.5vmin;
+  font-size: calc(16px + 0.5vw);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(16px + 0.5vw);
+  color: white;
+}
+
+.contact-info > p {
+  padding-right: 15px;
 }
 
 div.icons {
@@ -87,28 +106,88 @@ div.icons {
   transition: all 0.4s ease 0s;
 }
 
-/*-----Skills Bar-----*/
+/* Personal Drive */
 
-div.dev-wrapper {
-  margin: 80px 0 0 0;
+.personal-drive-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 0px;
+  background-color: rgba(104, 0, 99, 0.8);
 }
 
+.personal-drive-style h3 {
+  font-weight: bold;
+  font-size: calc(16px + 1vw);
+  color: #24034d;
+}
+
+.personal-drive-text h3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.personal-drive-animation h3:before {
+  content: 'BRAIN POWER';
+  animation: animate infinite 10s;
+  color: white;
+}
+@keyframes animate {
+  0% {
+    content: 'PEOPLE';
+  }
+  10% {
+    content: 'CREATIVITY';
+  }
+  20% {
+    content: 'WONDER';
+  }
+  30% {
+    content: 'ODDITY';
+  }
+  40% {
+    content: 'TEAMWORK';
+  }
+  50% {
+    content: 'CURIOSITY';
+  }
+  60% {
+    content: 'PASSION';
+  }
+  70% {
+    content: 'BRAIN POWER';
+  }
+  80% {
+    content: 'SUCCESS';
+  }
+  90% {
+    content: 'EMPATHY';
+  }
+  100% {
+    content: 'PEOPLE';
+  }
+}
+
+/*-----Skills Bar-----*/
+
 .devicons {
-  font-size: 5vmax;
-  color: black;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   flex: 1 1 auto;
   align-content: center;
-  height: 2vmax;
-  padding-left: 18px;
-  padding-right: 18px;
+}
+
+.devicons > i {
+  font-size: 5vmax;
+  margin: 5px;
 }
 
 @media (max-width: 576px) {
-  .devicons {
-    font-size: 8vmax;
+  .devicons > i {
+    font-size: calc(32px + 5vw);
   }
 }
 
@@ -116,70 +195,39 @@ div.dev-wrapper {
   color: #3b5998;
 }
 
-/*-----Profession Cards-----*/
+/* -----CV----- */
 
-.cards {
-  padding-top: 15px;
+.split-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  /* flex-flow: row wrap; */
 }
 
-@media (min-width: 576px) {
-  div.col.px-sm-0.px-xs-0.dev {
-    padding-right: 8px !important;
-    padding-left: 16px !important;
-  }
+.split {
+  width: 50%;
+  overflow-x: hidden;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(16px + 0.5vw);
+  color: white;
 }
 
-.nav-link.active.dev,
-.nav-link.active.psy {
-  padding: 0;
+.left {
+  left: 0;
+  background-color: #4442ae;
 }
 
-.card-header.dev,
-.card-footer.dev {
-  background-color: #680063;
+.right {
+  right: 0;
+  background-color: #a00b99;
 }
 
-.card-body.dev {
-  background-color: #7f0279;
-}
-
-.card-body.dev:hover {
-  background-color: #680063;
-  transition: 0.3s;
-}
-
-.card-body.dev,
-.card-body.psy {
-  margin: 0;
-  height: 30vh;
-  display: table;
-}
-
-.card-body.dev h3,
-.card-body.psy h3 {
-  display: table-cell;
-  vertical-align: middle;
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-}
-
-@media (min-width: 576px) {
-  div.col.px-sm-0.px-xs-0.psy {
-    padding-right: 16px !important;
-    padding-left: 8px !important;
-  }
-}
-.card-header.psy,
-.card-footer.psy {
-  background-color: #33076a;
-}
-
-.card-body.psy {
-  background-color: #5518a2;
-}
-
-.card-body.psy:hover {
-  background-color: #33076a;
-  transition: 0.3s;
 }
 
 /*-----Footer-----*/
