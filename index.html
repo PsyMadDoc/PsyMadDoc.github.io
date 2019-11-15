@@ -13,7 +13,6 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="fullpage.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
@@ -25,6 +24,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <div id="fullpage">
@@ -56,7 +60,6 @@
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
-             
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">How To Reach Me</a>
               </li>
@@ -130,13 +133,26 @@
           <i class="fab fa-r-project"></i>
           <i class="devicon-cplusplus-plain-wordmark colored"></i>
         </div>
+        <div class="decorative-hl"></div>
+      </section>
+
+      <!-- About me -->
+      <section class="about-me">
+        <div class="cv-heading">
+          <h3>Who is Victor?</h3>
+        </div>
+        <div class="summary">
+          <p>After doing everything there is to be done in the field of Psychology for the last 10 years, I discovering my passion for coding and I could not get enough.</p>
+          <p>I spent countless hours teaching myself everything I could get my hands on and practicing, day and night.</p>
+          <p>I am a self-taught, highly-driven professional, with a burning urge to challenge myself, learn and explore. I'm looking forward to bringing that passion to a full-time role.</p>
+        </div>
+        </div>
       </section>
 
       <!-- CV -->
       <section class="timeline">
-        <div class="decorative-hl"></div>
-        <div class="cv-heading">
-          <h1>Curriculum Vitae</h1>
+        <div class="cv">
+          <h1>CURRICULUM VITAE</h1>
         </div>
         <div class="cv-heading">
           <h3>Education</h3>
@@ -179,102 +195,7 @@
             </div>
           </li>
         </ul>
-        <div class="cv-heading">
-          <h3>Courses</h3>
-        </div>
-        <ul>
-          <li>
-            <div>
-              <time>Udemy</time>
-              The Complete Web Developer in 2020: Zero to Mastery
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Teachable</time>
-              CSS Flexbox
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Udacity</time>
-              Version Control with Git
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Google</time>
-              Advanced Google Analytics
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Google</time>
-              Fundamentals of Digital Marketing
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Google</time>
-              Google Web Designers Basics
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>SoloLearn</time>
-              HTML Fundamentals
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Codecademy</time>
-              C++
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>University of bucharest</time>
-              Advanced data analysis in R
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Udemy</time>
-              Programming fundamentals
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Cambridge Assessment</time>
-              Cambridge ESOL Level 2 Certificate in ESOL International,
-              Certificate in Advanced English
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Universiy of Bucharest</time>
-              Teaching license
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Romanian Psychologists' College</time>
-              Practising License in Clinical Psychology
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Romanian Psychologists' College</time>
-              Practising License in Cognitive-behavioral Psychotherapy
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>The Sexology Institute</time>
-              Systemic Psychotherapy and Sexology Certification
-            </div>
-          </li>
-        </ul>
+        <div class="decorative-hl-small"></div>
         <div class="cv-heading">
           <h3>Work experience</h3>
         </div>
@@ -315,30 +236,91 @@
             </div>
           </li>
         </ul>
+        <div class="decorative-hl-small"></div>
+      </section>
+      <section>
+        <div class="cv-heading">
+          <h3>Courses & Certificates</h3>
+        </div>
+        <div class="courses-wrapper">
+          <ul class="courses italic">
+            <li class="">
+              <div></div>
+              The Complete Web Developer in 2020: Zero to Mastery @ Udemy
+            </li>
+            <li>
+              <div class="courses-number"></div>
+              CSS Flexbox @ Teachable
+            </li>
+            <li>
+              <div></div>
+              Version Control with Git @ Udacity
+            </li>
+            <li>
+              <div></div>
+              Advanced Google Analytics @ Google
+            </li>
+            <li>
+              <div></div>
+              Fundamentals of Digital Marketing @ Google
+            </li>
+            <li>
+              <div></div>
+              Google Web Designers Basics
+            </li>
+            <li>
+              <div></div>
+              HTML Fundamentals @SoloLearn
+            </li>
+            <li>
+              <div></div>
+              C++ @ Codecademy
+            </li>
+            <li>
+              <div></div>
+              Advanced data analysis in R @ University of Bucharest
+            </li>
+            <li>
+              <div></div>
+              Programming fundamentals @ Udemy
+            </li>
+            <li>
+              <div></div>
+              Cambridge ESOL Certificate Level 2 @ Cambridge Assessment
+            </li>
+            <li>
+              <div></div>
+              Level 1 Teaching license @ University of Bucharest
+            </li>
+            <li>
+              <div></div>
+              Practising License in Clinical Psychology @ Romanian
+              Psychologists' College
+            </li>
+            <li>
+              <div></div>
+              Practising License in Cognitive-behavioral Psychotherapy @
+              Romanian Psychologists' College
+            </li>
+            <li>
+              <div></div>
+              Systemic Psychotherapy and Sexology Certification @ The Sexology
+              Institute
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Footer -->
-      <section class="section s3 fp-auto-height">
-        <footer class="container-fluid">
-          <p>&copy; 2019 Cruceanu Victor</p>
-        </footer>
-      </section>
+      <footer class="container-fluid">
+        <p>&copy; 2019 Cruceanu Victor</p>
+      </footer>
     </div>
     <!-- fullpage end -->
 
     <!-- JS -->
-    <script src="fullpage.min.js"></script>
+
     <script src="foo.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"

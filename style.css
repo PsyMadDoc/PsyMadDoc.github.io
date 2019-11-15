@@ -13,6 +13,20 @@ h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.decorative-hl {
+  min-height: calc(16px + 1vw);
+  background-color: rgba(104, 0, 99, 0.8);
+}
+
+.decorative-hl-small {
+  min-height: calc(5px + 1vw);
+  background-color: rgba(104, 0, 99, 0.8);
+  margin: 20px 0;
+}
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,10 +45,6 @@ html * {
 
 .dropdown-item.cv:hover {
   background-color: rgba(64, 13, 129, 0.2);
-}
-
-.btn.btn.btn-outline-secondary.my-2.my-sm-0.search-btn:hover {
-  background-color: rgb(104, 0, 99);
 }
 
 /*-----Jumbotron-----*/
@@ -204,11 +214,34 @@ div.icons {
   color: #3b5998;
 }
 
+/* -----About me----- */
+
+.summary {
+  padding-bottom: 20px;
+}
+
+.summary p {
+  font-size: calc(12px + 1vw);
+  color: #24034d;
+  padding: 0 45px;
+}
+
 /* -----CV----- */
 
-.decorative-hl {
-  min-height: calc(16px + 1vw);
+.cv {
   background-color: rgba(104, 0, 99, 0.8);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.cv h1 {
+  font-weight: bold;
+  font-size: calc(16px + 1vw);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
 }
 
 .cv-heading {
@@ -258,7 +291,7 @@ div.icons {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #7f0279;
+  background: rgba(104, 0, 99, 0.8);
 }
 
 .timeline ul li div::before {
@@ -277,7 +310,7 @@ div.icons {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #7f0279 transparent transparent;
+  border-color: transparent rgba(104, 0, 99, 0.8) transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -287,7 +320,7 @@ div.icons {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #7f0279;
+  border-color: transparent transparent transparent rgba(104, 0, 99, 0.8);
 }
 
 time {
@@ -323,7 +356,7 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #6b3ba7 transparent transparent;
+    border-color: transparent rgba(104, 0, 99, 0.8) transparent transparent;
   }
 }
 
@@ -356,48 +389,49 @@ time {
   opacity: 1;
 }
 
-/* 
-.split-wrapper {
+/* ----- Courses ----- */
+
+.courses-wrapper {
+  padding: 0 45px;
+}
+
+.courses {
+  counter-reset: list-counter;
+  list-style: none;
+}
+
+.courses li {
+  font-size: 1.2rem;
+  color: #24034d;
+  margin-bottom: 1.5em;
   display: flex;
-  justify-content: flex-start;
-  flex-flow: row wrap;
 }
 
-.split {
-  width: 50%;
-  overflow-x: hidden;
-  padding-top: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-size: calc(16px + 0.5vw);
-  color: white;
-}
-
-.left {
-  left: 0;
-  background-color: #4442ae;
-}
-
-.right {
-  right: 0;
-  background-color: #a00b99;
-}
-
-.centered {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.courses div:before {
+  content: counter(list-counter);
+  counter-increment: list-counter;
+  transform: rotate(45deg);
+  text-transform: rotate(90deg);
+  width: 2.7em;
+  height: 2.7em;
+  padding: 0.5em;
+  margin-right: 1em;
+  border: 0.25em solid rgba(104, 0, 99, 0.8);
+  background: #7f0279;
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
   text-align: center;
-} */
+  font-size: 0.7em;
+  display: inline-block;
+}
 
 /*-----Footer-----*/
 
 footer {
-  margin-top: 5vh;
-  border-top: 1px solid;
-  border-top-color: rgba(104, 0, 99 0.4);
   min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(104, 0, 99, 0.8);
 }
