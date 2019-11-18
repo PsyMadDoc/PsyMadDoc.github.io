@@ -51,7 +51,7 @@ html * {
 
 .jumbotron {
   margin-bottom: auto;
-  padding: 3rem 0;
+  padding: 0;
 }
 
 div.jumbotron.jumbotron-fluid {
@@ -61,8 +61,19 @@ div.jumbotron.jumbotron-fluid {
   min-height: 75vh;
 }
 
+.card-body {
+  padding-top: 15vh;
+}
+
 .container {
   float: left;
+}
+
+/* (tablets, 768px and down) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {
+  .jumbotron .jumbotron-fluid {
+    padding: 0 !important;
+  }
 }
 
 .title,
@@ -191,6 +202,7 @@ div.icons {
 /*-----Skills Bar-----*/
 
 .devicons {
+  margin: 0 10px;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -200,13 +212,13 @@ div.icons {
 }
 
 .devicons > i {
-  font-size: 5vmax;
+  font-size: 3vmax;
   margin: 5px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .devicons > i {
-    font-size: calc(32px + 5vw);
+    font-size: calc(28px + 5vw);
   }
 }
 
@@ -217,13 +229,55 @@ div.icons {
 /* -----About me----- */
 
 .summary {
-  padding-bottom: 20px;
+  padding-bottom: 2em;
+  position: relative;
 }
 
-.summary p {
+.summary .summary-container {
+  padding-left: 160px;
+}
+
+.summary blockquote {
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0;
+  position: relative;
+  text-shadow: 0 1px white;
+  z-index: 600;
+}
+
+.summary blockquote p {
   font-size: calc(12px + 1vw);
   color: #24034d;
   padding: 0 45px;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {
+  .summary blockquote p {
+    font-size: calc(12px + 1vw);
+    color: #24034d;
+    text-align: center;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .summary blockquote p {
+    font-size: 18px;
+    color: #24034d;
+  }
+}
+
+.summary img {
+  border: 3px solid rgba(104, 0, 99, 0.8);
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  margin-left: 5ch;
+  margin: -1em 0 0 5ch;
 }
 
 /* -----CV----- */
@@ -239,14 +293,13 @@ div.icons {
   font-weight: bold;
   font-size: calc(16px + 1vw);
   color: #fff;
-
   display: flex;
   justify-content: center;
 }
 
 .cv-heading {
   font-weight: bold;
-  font-size: calc(16px + 1vw);
+  /* font-size: calc(16px + 1vw); */
   color: #24034d;
   display: flex;
   justify-content: center;
@@ -258,8 +311,11 @@ div.icons {
   font-size: calc(16px + 1vw);
   color: #24034d;
 }
-
 /* -----Timeline----- */
+section .timeline {
+  overflow-x: hidden;
+}
+
 .timeline ul {
   padding: 0 auto;
 }
@@ -434,4 +490,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgba(104, 0, 99, 0.8);
+}
+
+footer p {
+  color: #fff;
 }
