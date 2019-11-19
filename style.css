@@ -303,14 +303,22 @@ div.icons {
   color: #24034d;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px 0;
 }
 
-.cv-heading h1 {
+.cv-heading h3 {
   font-weight: bold;
   font-size: calc(16px + 1vw);
   color: #24034d;
 }
+
+.cv-heading h4 {
+  font-size: 18px;
+  color: #24034d;
+}
+
 /* -----Timeline----- */
 section.timeline {
   overflow-x: hidden;
@@ -448,39 +456,204 @@ time {
 /* ----- Courses ----- */
 
 .courses-wrapper {
-  padding: 0 45px;
+  padding: 20px 45px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
 .courses {
-  counter-reset: list-counter;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 15px 30px;
+  position: relative;
+  overflow: hidden;
+  font-family: sans-serif;
+  width: 25%;
+  height: 100px;
+  color: inherit;
+  overflow: hidden;
+  will-change: transform;
+  transition: transform 0.2s;
+}
+
+.courses:hover {
+  transform: scale(1.1);
+  background-color: rgba(104, 0, 99, 0.8);
+  text-decoration: none;
+}
+
+.courses:active {
+  transform: scale(1.1) translate(2px);
+}
+
+.courses::before {
+  content: attr(data-index);
+  display: block;
+  font-size: 80px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -35px;
+  left: -5px;
+}
+
+.course-title {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+  color: #24034d;
+  font-size: 1.2em;
+}
+
+.course-subtitle {
+  font-size: 1em;
+  font-style: italic;
+  margin: 0;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  right: 10px;
+}
+
+.no-action {
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+  transform: none !important;
+}
+
+.no-action:hover {
+  background-color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 372px) {
+  .courses {
+    height: fit-content;
+    width: 100%;
+  }
+  .course-title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 373px) and (max-width: 575px) {
+  .courses {
+    height: 100px;
+    width: 80%;
+  }
+  .course-title {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .courses {
+    height: 100px;
+    width: 80%;
+  }
+  .course-title {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .courses {
+    height: 100px;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .courses {
+    width: 25%;
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .courses {
+    width: 20%;
+    height: 140px;
+  }
+}
+
+/* 
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course {
+
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: inline-block;
+  max-width: 30%;
+  min-width: 30%;
+  min-height: 180px;
+  max-height: 180px;
+  box-shadow: 2px 2px 7px #888;
+  margin: 10px 10px;
+
+}
+
+.course h4 {
+  color: #24034d;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px;
+}
+
+.course p {
+  color: rgba(104, 0, 99, 0.5);
+  margin: 0;
+  right: 0;
+  bottom: 10px;
+  text-align: end;
+}
+
+.courses {
   list-style: none;
 }
 
-.courses li {
-  font-size: 1.2rem;
-  color: #24034d;
-  margin-bottom: 1.5em;
-  display: flex;
+@media screen and (max-width: 768px) {
+  .courses {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .course {
+    min-width: 40%;
+    min-height: 200px;
+    max-height: 200px;
+  }
 }
 
-.courses div:before {
-  content: counter(list-counter);
-  counter-increment: list-counter;
-  transform: rotate(45deg);
-  text-transform: rotate(90deg);
-  width: 2.7em;
-  height: 2.7em;
-  padding: 0.5em;
-  margin-right: 1em;
-  border: 0.25em solid rgba(104, 0, 99, 0.8);
-  background: #7f0279;
-  color: #fff;
-  font-family: arial;
-  font-weight: bold;
-  text-align: center;
-  font-size: 0.7em;
-  display: inline-block;
+@media screen and (max-width: 576px) {
+  .courses {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 75%;
+    margin: auto;
+  }
+  .course {
+    min-width: 100%;
+  }
 }
+
+@media (min-width: 1200px) {
+  .courses {
+    max-width: 75%;
+    margin: auto;
+  }
+} */
 
 /*-----Footer-----*/
 
