@@ -304,7 +304,7 @@ div.icons {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
   padding: 20px 0;
 }
 
@@ -312,11 +312,13 @@ div.icons {
   font-weight: bold;
   font-size: calc(16px + 1vw);
   color: #24034d;
+  text-align: center;
 }
 
 .cv-heading h4 {
   font-size: 18px;
   color: #24034d;
+  text-align: center;
 }
 
 /* -----Timeline----- */
