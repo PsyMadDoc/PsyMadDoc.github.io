@@ -312,7 +312,7 @@ div.icons {
   color: #24034d;
 }
 /* -----Timeline----- */
-section .timeline {
+section.timeline {
   overflow-x: hidden;
 }
 
