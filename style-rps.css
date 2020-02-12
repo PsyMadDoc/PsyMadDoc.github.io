@@ -115,3 +115,62 @@ body {
   font-weight: 900;
   color: #f1c40f;
 }
+
+@media screen and (min-width: 373px) and (max-width: 575px) {
+  .mainTitle {
+    font-size: 40px;
+    padding: 20px 0 0;
+  }
+
+  .playBtn:hover {
+    border-color: rgba(0, 0, 0, 0);
+    transition: all 0.4s ease 0s;
+    transform: scale(1);
+    color: #2c3e50;
+    background-color: #2ecc71;
+    text-decoration: none;
+    border: 5px solid;
+    border-color: #2c3e50;
+  }
+
+  .choiceBtn {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-size: 30px;
+  }
+
+  .choiceContainer {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+
+  .showWinnerContainer {
+    padding: 0 40px;
+  }
+
+  .showWinner {
+    margin: 10px 0;
+  }
+
+  .results {
+    padding: 10px 0;
+    color: #bdc3c7;
+    font-size: 20px;
+  }
+
+  .resultsLastLine {
+    color: #bdc3c7;
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  .resultsLastWord {
+    font-size: 60px;
+    font-weight: 900;
+    color: #f1c40f;
+  }
+}
