@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock, paper, scissors</title>
+    <!-- LINKS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="titleContainer">
+      <h1 class="mainTitle">ROCK, PAPER, SCISSORS</h1>
+    </div>
+    <div class="bodyContainer">
+      <div class="btnContainer">
+        <button id="playBtn" class="playBtn">PLAY!</button>
+      </div>
+      <div id="showChoicesContainer" class="choiceContainer">
+        <button class="choiceBtn" id="rockBtn" data-choice="rock" ">ROCK</button>
+        <button class="choiceBtn" id="paperBtn" data-choice="paper" >PAPER</button>
+        <button class="choiceBtn" id="scissorsBtn" data-choice="scissors" >SCISSORS</button>
+      </div>
+      <div class="showWinnerContainer">
+        <div id="showWinnerContainer" class="showWinner">
+          <h3 class="results" id="yourChoice"></h3>
+          <h3 class="results" id="computerChoice"></h3>
+          <h3 class="resultsLastLine" id="winner"></h3><h3 class="resultsLastWord" id="winnerResult"></h3>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="foo.js"></script>
+  </body>
+</html>
