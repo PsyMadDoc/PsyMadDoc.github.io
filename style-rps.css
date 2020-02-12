@@ -116,61 +116,57 @@ body {
   color: #f1c40f;
 }
 
-@media screen and (min-width: 373px) and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   .mainTitle {
     font-size: 40px;
     padding: 20px 0 0;
   }
 
+  .btnContainer {
+    padding: 60px;
+  }
+
+  .playBtn {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 70px;
+  }
+
   .playBtn:hover {
-    border-color: rgba(0, 0, 0, 0);
-    transition: all 0.4s ease 0s;
     transform: scale(1);
-    color: #2c3e50;
-    background-color: #2ecc71;
-    text-decoration: none;
-    border: 5px solid;
-    border-color: #2c3e50;
   }
 
   .choiceBtn {
     padding: 10px 20px;
     margin: 10px 20px;
-    font-size: 30px;
-  }
-
-  .choiceContainer {
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-flow: wrap;
+    font-size: 20px;
   }
 
   .showWinnerContainer {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
   .showWinner {
     margin: 10px 0;
+    min-height: 230px;
+    margin: 10px 0;
+    padding: 20px;
   }
 
   .results {
-    padding: 10px 0;
+    padding: 5px 0;
     color: #bdc3c7;
     font-size: 20px;
   }
 
   .resultsLastLine {
     color: #bdc3c7;
-    font-size: 30px;
-    padding-top: 30px;
+    font-size: 20px;
+    padding-top: 10px;
   }
 
   .resultsLastWord {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 900;
-    color: #f1c40f;
   }
 }
