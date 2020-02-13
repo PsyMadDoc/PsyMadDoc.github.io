@@ -170,3 +170,106 @@ body {
     font-weight: 900;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .mainTitle {
+    /* font-size: 60px; */
+    padding: 40px 0 0;
+  }
+
+  .btnContainer {
+    padding: 80px;
+  }
+
+  .playBtn {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 70px;
+  }
+
+  .choiceBtn {
+    padding: 10px 20px;
+    margin: 20px 20px;
+    font-size: 25px;
+  }
+
+  .showWinnerContainer {
+    padding: 0 40px;
+  }
+
+  .showWinner {
+    margin: 10px 0;
+    min-height: 230px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .results {
+    padding: 5px 0;
+    color: #bdc3c7;
+    font-size: 20px;
+  }
+
+  .resultsLastLine {
+    color: #bdc3c7;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
+  .resultsLastWord {
+    font-size: 50px;
+    font-weight: 900;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainTitle {
+    /* font-size: 60px; */
+    padding: 40px 0 0;
+  }
+
+  .btnContainer {
+    padding: 80px;
+  }
+
+  .playBtn {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 70px;
+  }
+
+  .choiceBtn {
+    padding: 10px 20px;
+    margin: 20px 20px;
+    font-size: 25px;
+  }
+
+  .showWinnerContainer {
+    padding: 0 40px;
+  }
+
+  .showWinner {
+    margin: 10px 0;
+    min-height: 230px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .results {
+    padding: 5px 0;
+    color: #bdc3c7;
+    font-size: 20px;
+  }
+
+  .resultsLastLine {
+    color: #bdc3c7;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
+  .resultsLastWord {
+    font-size: 50px;
+    font-weight: 900;
+  }
+}
+
