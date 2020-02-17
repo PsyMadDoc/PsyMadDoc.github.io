@@ -1,0 +1,266 @@
+$primary-color: #2ecc71;
+$secondary-color: #2c3e50;
+$text-color: #bdc3c7;
+$font: 'Roboto', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: $font;
+}
+
+body {
+  background-color: $primary-color;
+  .titleContainer {
+    .mainTitle {
+      text-align: center;
+      font-size: 80px;
+      color: $secondary-color;
+      padding: 50px 0 0;
+    }
+  }
+  .bodyContainer {
+    .btnContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 100px;
+      .playBtn {
+        color: $text-color;
+        font-size: 35px;
+        text-align: center;
+        padding: 30px 50px;
+        background-color: $secondary-color;
+        border: 0;
+        position: absolute;
+      }
+      .playBtn:hover {
+        transition: all 0.4s ease 0s;
+        transform: scale(1.5);
+        color: $secondary-color;
+        background-color: $primary-color;
+        text-decoration: none;
+        border: 5px solid $secondary-color;
+      }
+    }
+    .choiceContainer {
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-flow: wrap;
+      .choiceBtn {
+        color: $text-color;
+        padding: 20px 40px;
+        margin: 10px 20px;
+        font-size: 35px;
+        text-align: center;
+        background-color: $secondary-color;
+        border-color: rgba(0, 0, 0, 0);
+        border: 5px solid $secondary-color;
+      }
+      .choiceBtn:hover {
+        border-color: rgba(0, 0, 0, 0);
+        transition: all 0.4s ease 0s;
+        color: $secondary-color;
+        background-color: $primary-color;
+        text-decoration: none;
+        border: 5px solid $secondary-color;
+      }
+    }
+    .showWinnerContainer {
+      padding: 0 200px;
+      .showWinner {
+        visibility: hidden;
+        text-align: center;
+        background-color: rgba(44, 62, 80, 0.7);
+        min-height: 300px;
+        margin: 50px 0;
+        padding: 20px;
+        border-radius: 25px;
+        border: 5px solid $secondary-color;
+        .results {
+          padding: 10px 0;
+          color: $text-color;
+          font-size: 20px;
+        }
+        .resultsLastLine {
+          color: $text-color;
+          font-size: 40px;
+          padding-top: 30px;
+        }
+        .resultsLastWord {
+          font-size: 60px;
+          font-weight: 900;
+          color: #f1c40f;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    .titleContainer {
+      .mainTitle {
+        font-size: 20px;
+        padding: 20px 0 0;
+      }
+    }
+
+    .bodyContainer {
+      .btnContainer {
+        padding: 60px;
+        .playBtn {
+          font-size: 20px;
+          font-weight: 900;
+          padding: 20px 70px;
+        }
+        .playBtn:hover {
+          transform: scale(1);
+        }
+      }
+
+      .choiceContainer {
+        .choiceBtn {
+          padding: 10px 20px;
+          margin: 10px 20px;
+          font-size: 20px;
+        }
+      }
+
+      .showWinnerContainer {
+        padding: 0 20px;
+        .showWinner {
+          margin: 10px 0;
+          min-height: 230px;
+          margin: 10px 0;
+          padding: 20px;
+        }
+        .results {
+          padding: 5px 0;
+          font-size: 20px;
+        }
+        .resultsLastLine {
+          font-size: 20px;
+          padding-top: 10px;
+        }
+        .resultsLastWord {
+          font-size: 40px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    .titleContainer {
+      .mainTitle {
+        font-size: 50px;
+        padding: 80px 0;
+      }
+    }
+
+    .bodyContainer {
+      .btnContainer {
+        padding: 80px;
+        .playBtn {
+          font-size: 20px;
+          font-weight: 900;
+          padding: 20px 70px;
+        }
+      }
+
+      .choiceBtn {
+        padding: 10px 20px;
+        margin: 20px 20px;
+        font-size: 25px;
+      }
+
+      .showWinnerContainer {
+        padding: 0 40px;
+        .showWinner {
+          margin: 10px 0;
+          min-height: 230px;
+          margin: 10px 0;
+          padding: 20px;
+        }
+        .results {
+          padding: 5px 0;
+          font-size: 20px;
+        }
+        .resultsLastLine {
+          font-size: 30px;
+          padding-top: 20px;
+        }
+        .resultsLastWord {
+          font-size: 50px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    .titleContainer {
+      .mainTitle {
+        padding: 40px 0 0;
+      }
+    }
+
+    .bodyContainer {
+      .btnContainer {
+        padding: 80px;
+        .playBtn {
+          font-size: 20px;
+          font-weight: 900;
+          padding: 20px 70px;
+        }
+      }
+
+      .choiceBtn {
+        padding: 10px 20px;
+        margin: 20px 20px;
+        font-size: 25px;
+      }
+
+      .showWinnerContainer {
+        padding: 0 40px;
+        .showWinner {
+          margin: 10px 0;
+          min-height: 230px;
+          margin: 10px 0;
+          padding: 20px;
+        }
+        .results {
+          padding: 5px 0;
+          font-size: 20px;
+        }
+        .resultsLastLine {
+          font-size: 30px;
+          padding-top: 20px;
+        }
+        .resultsLastWord {
+          font-size: 50px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}

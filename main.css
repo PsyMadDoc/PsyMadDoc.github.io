@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #2ecc71;
+}
+body .titleContainer .mainTitle {
+  text-align: center;
+  font-size: 80px;
+  color: #2c3e50;
+  padding: 50px 0 0;
+}
+body .bodyContainer .btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 100px;
+}
+body .bodyContainer .btnContainer .playBtn {
+  color: #bdc3c7;
+  font-size: 35px;
+  text-align: center;
+  padding: 30px 50px;
+  background-color: #2c3e50;
+  border: 0;
+  position: absolute;
+}
+body .bodyContainer .btnContainer .playBtn:hover {
+  transition: all 0.4s ease 0s;
+  transform: scale(1.5);
+  color: #2c3e50;
+  background-color: #2ecc71;
+  text-decoration: none;
+  border: 5px solid #2c3e50;
+}
+body .bodyContainer .choiceContainer {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+body .bodyContainer .choiceContainer .choiceBtn {
+  color: #bdc3c7;
+  padding: 20px 40px;
+  margin: 10px 20px;
+  font-size: 35px;
+  text-align: center;
+  background-color: #2c3e50;
+  border-color: rgba(0, 0, 0, 0);
+  border: 5px solid #2c3e50;
+}
+body .bodyContainer .choiceContainer .choiceBtn:hover {
+  border-color: rgba(0, 0, 0, 0);
+  transition: all 0.4s ease 0s;
+  color: #2c3e50;
+  background-color: #2ecc71;
+  text-decoration: none;
+  border: 5px solid #2c3e50;
+}
+body .bodyContainer .showWinnerContainer {
+  padding: 0 200px;
+}
+body .bodyContainer .showWinnerContainer .showWinner {
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(44, 62, 80, 0.7);
+  min-height: 300px;
+  margin: 50px 0;
+  padding: 20px;
+  border-radius: 25px;
+  border: 5px solid #2c3e50;
+}
+body .bodyContainer .showWinnerContainer .showWinner .results {
+  padding: 10px 0;
+  color: #bdc3c7;
+  font-size: 20px;
+}
+body .bodyContainer .showWinnerContainer .showWinner .resultsLastLine {
+  color: #bdc3c7;
+  font-size: 40px;
+  padding-top: 30px;
+}
+body .bodyContainer .showWinnerContainer .showWinner .resultsLastWord {
+  font-size: 60px;
+  font-weight: 900;
+  color: #f1c40f;
+}
+
+@media screen and (max-width: 768px) {
+  body .titleContainer .mainTitle {
+    font-size: 20px;
+    padding: 20px 0 0;
+  }
+  body .bodyContainer .btnContainer {
+    padding: 60px;
+  }
+  body .bodyContainer .btnContainer .playBtn {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 70px;
+  }
+  body .bodyContainer .btnContainer .playBtn:hover {
+    transform: scale(1);
+  }
+  body .bodyContainer .choiceContainer .choiceBtn {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-size: 20px;
+  }
+  body .bodyContainer .showWinnerContainer {
+    padding: 0 20px;
+  }
+  body .bodyContainer .showWinnerContainer .showWinner {
+    margin: 10px 0;
+    min-height: 230px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+  body .bodyContainer .showWinnerContainer .results {
+    padding: 5px 0;
+    font-size: 20px;
+  }
+  body .bodyContainer .showWinnerContainer .resultsLastLine {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  body .bodyContainer .showWinnerContainer .resultsLastWord {
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 992px) {
+  body .titleContainer .mainTitle {
+    font-size: 50px;
+    padding: 80px 0;
+  }
+  body .bodyContainer .btnContainer {
+    padding: 80px;
+  }
+  body .bodyContainer .btnContainer .playBtn {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 70px;
+  }
+  body .bodyContainer .choiceBtn {
+    padding: 10px 20px;
+    margin: 20px 20px;
+    font-size: 25px;
+  }
+  body .bodyContainer .showWinnerContainer {
+    padding: 0 40px;
+  }
+  body .bodyContainer .showWinnerContainer .showWinner {
+    margin: 10px 0;
+    min-height: 230px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+  body .bodyContainer .showWinnerContainer .results {
+    padding: 5px 0;
+    font-size: 20px;
+  }
+  body .bodyContainer .showWinnerContainer .resultsLastLine {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  body .bodyContainer .showWinnerContainer .resultsLastWord {
+    font-size: 50px;
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .titleContainer .mainTitle {
+    padding: 40px 0 0;
+  }
+  body .bodyContainer .btnContainer {
+    padding: 80px;
+  }
+  body .bodyContainer .btnContainer .playBtn {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 70px;
+  }
+  body .bodyContainer .choiceBtn {
+    padding: 10px 20px;
+    margin: 20px 20px;
+    font-size: 25px;
+  }
+  body .bodyContainer .showWinnerContainer {
+    padding: 0 40px;
+  }
+  body .bodyContainer .showWinnerContainer .showWinner {
+    margin: 10px 0;
+    min-height: 230px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+  body .bodyContainer .showWinnerContainer .results {
+    padding: 5px 0;
+    font-size: 20px;
+  }
+  body .bodyContainer .showWinnerContainer .resultsLastLine {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  body .bodyContainer .showWinnerContainer .resultsLastWord {
+    font-size: 50px;
+    font-weight: 900;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
