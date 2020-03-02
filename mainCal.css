@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #1446a0;
+}
+
+.mainTitle {
+  margin: 80px auto;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.mainTitle > h1 {
+  font-weight: 400;
+  font-size: 4vw;
+}
+
+.calendar-container {
+  background-color: #f3f3f3;
+}
+
+.calendar-container {
+  position: relative;
+  padding-bottom: 75% !important;
+  height: 0;
+  overflow: hidden;
+}
+.calendar-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+/* 
+#iframeMin {
+  visibility: hidden;
+} */
+
+.calendar {
+  padding: 50px 20px;
+}
